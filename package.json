@@ -9,9 +9,17 @@
     "check-types": "turbo run check-types",
     "contracts:compile": "pnpm --filter @repo/contracts compile",
     "contracts:test": "pnpm --filter @repo/contracts test",
-    "contracts:deploy": "pnpm --filter @repo/contracts deploy"
+    "contracts:deploy": "pnpm --filter @repo/contracts deploy",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{json,md}": [
+      "prettier --write"
+    ]
   },
   "devDependencies": {
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.2",
     "prettier": "^3.6.0",
     "turbo": "^2.5.4",
     "typescript": "5.8.2"

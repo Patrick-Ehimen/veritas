@@ -1,0 +1,4 @@
+# Only lint staged files (much faster)
+npx lint-staged
+# Or just run lint without test on commit
+# turbo lint
