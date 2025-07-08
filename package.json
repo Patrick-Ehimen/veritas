@@ -10,6 +10,7 @@
     "contracts:compile": "pnpm --filter @repo/contracts compile",
     "contracts:test": "pnpm --filter @repo/contracts test",
     "contracts:deploy": "pnpm --filter @repo/contracts deploy",
+    "setup:env": "node tools/setup-env.mjs",
     "prepare": "husky"
   },
   "lint-staged": {
